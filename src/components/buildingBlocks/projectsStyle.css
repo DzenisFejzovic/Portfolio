@@ -1,0 +1,115 @@
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@font-face {
+  font-family: Dosis;
+  src: url(../fonts/Dosis-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DosisMedium;
+  src: url(../fonts/Dosis-Medium.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DosisSemiBold;
+  src: url(../fonts/Dosis-SemiBold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DosisBold;
+  src: url(../fonts/Dosis-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DosisLight;
+  src: url(../fonts/Dosis-Light.ttf);
+  font-weight: bold;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-top: -10px;
+  height: 400px;
+  width: 630px;
+  border-radius: 5px;
+  background-color: #151515;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.228);
+}
+
+.projectDivAnim {
+  margin-top: -150px;
+  margin-left: -200px;
+  width: 1000px;
+  height: 1000px;
+  background-image: linear-gradient(
+    rgba(32, 32, 32, 0.388),
+    #2a2a2a41,
+    rgba(40, 40, 40, 0.352),
+    #23232352,
+    #32323252,
+    #25252552,
+    #23232352,
+    #27272752
+  );
+  animation-name: move;
+  animation-duration: 50s;
+  animation-iteration-count: 5000;
+  z-index: 0;
+}
+
+.projectInfo {
+  width: 610px;
+  height: 400px;
+  position: absolute;
+  z-index: 3;
+}
+
+.projectTitleComp {
+  margin-top: 0;
+  font-family: DosisMedium;
+  font-size: 60px;
+  margin-left: 5%;
+  color: #ffffff;
+  position: absolute;
+}
+
+.projectText {
+  font-family: Dosis;
+  font-size: 25px;
+
+  color: #ffffff;
+  max-width: 280px;
+  margin-left: 55%;
+  margin-top: 80px;
+}
+
+.projectLinker {
+  margin-top: 0;
+  font-family: DosisMedium;
+  font-size: 30px;
+  margin-left: 13%;
+  margin-top: -50px;
+  color: #ffffff;
+}
+
+.projectLinker > a {
+  text-decoration: none;
+}

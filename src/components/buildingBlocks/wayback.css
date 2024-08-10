@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Dosis;
+  src: url(../fonts/Dosis-Regular.ttf);
+  font-weight: bold;
+}
+
+.wayback {
+  background-color: #252525;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.228);
+  border-bottom-right-radius: 50%;
+  cursor: pointer;
+  font-family: Dosis;
+  display: flex;
+  justify-content: center;
+}
+
+.wayback > p {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+}

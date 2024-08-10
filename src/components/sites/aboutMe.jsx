@@ -3,11 +3,16 @@ import "./Sites.css";
 import reactLogo from "../pics/reactLogo.png";
 import blenderLogo from "../pics/BlenderLogo.png";
 import robloxStudioLogo from "../pics/robloxStud.png";
+import placeholderImage from "../pics/tripoop.png";
+import { useNavigate } from "react-router-dom";
 
 function AboutMe() {
+  const navigate = useNavigate();
+
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
 
   function toggleShow(varient) {
     if (varient === 1) {
@@ -17,6 +22,8 @@ function AboutMe() {
     } else if (varient === 3) {
       setShow3(true);
     }
+
+    setShow4(true);
   }
 
   function toggleClose(varient) {
@@ -27,6 +34,8 @@ function AboutMe() {
     } else if (varient === 3) {
       setShow3(false);
     }
+
+    setShow4(false);
   }
 
   console.log(show, show2, show3);
@@ -56,6 +65,13 @@ function AboutMe() {
         </p>
       </div>
       <div className="imageHolder">
+        <div className="placeholderImage">
+          <img
+            src={placeholderImage}
+            alt=""
+            className={show4 ? "hide4" : "show4"}
+          />
+        </div>
         <div className="robloxImage">
           <img
             src={robloxStudioLogo}
@@ -76,6 +92,7 @@ function AboutMe() {
           className="buttonR"
           onMouseEnter={() => toggleShow(1)}
           onMouseLeave={() => toggleClose(1)}
+          onClick={() => navigate("/robloxStudio")}
         >
           Roblox Studio
         </button>
@@ -83,6 +100,7 @@ function AboutMe() {
           className="buttonW"
           onMouseEnter={() => toggleShow(2)}
           onMouseLeave={() => toggleClose(2)}
+          onClick={() => navigate("/webDevelopment")}
         >
           Web Development
         </button>
@@ -90,6 +108,7 @@ function AboutMe() {
           className="buttonT"
           onMouseEnter={() => toggleShow(3)}
           onMouseLeave={() => toggleClose(3)}
+          onClick={() => navigate("/3Dmodelling")}
         >
           3D modelling
         </button>

@@ -32,8 +32,34 @@
 /* Web Development */
 
 /* Roblox Studio */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .robloxContainer {
   margin-top: 30px;
+}
+
+.titleContainer {
+  width: 52%;
+  height: 185px;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-image: -moz-radial-gradient(
+    circle,
+    rgba(138, 138, 138, 0.059) 0%,
+    rgba(0, 0, 0, 0.066) 100%,
+    rgba(0, 0, 0, 0.064) 100%,
+    rgba(0, 0, 0, 0.03) 50%
+  );
+  border-radius: 40%;
+  backdrop-filter: blur(10px);
 }
 
 .robloxTitle {
@@ -42,7 +68,62 @@
   margin: 0;
   margin-left: 30px;
   color: #ffffff;
-  display: flex;
+}
+
+.robloxFun {
+  position: absolute;
+  display: grid;
+  margin-left: 80%;
+  margin-top: -100px;
+}
+
+.player {
+  height: 250px;
+}
+
+.playerText {
+  height: 120px;
+  transform: rotate(10deg);
+}
+
+.projectContainerR {
+  margin-top: 60px;
+  z-index: 3;
+
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+.projectTitleR {
+  font-family: DosisMedium;
+  font-size: 80px;
+  margin-top: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.overviewContainer {
+  width: 38%;
+  height: 500px;
+  text-align: center;
+  margin-top: -20px;
+  z-index: 3;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.polaroidHolder {
+  position: absolute;
+  margin-top: -1000px;
+  margin-left: 100px;
+}
+
+.construction {
+  width: 700px;
 }
 
 /* About me */
@@ -182,25 +263,42 @@
 .hide1 {
   transition: 0.5s;
   opacity: 0;
+  filter: blur(15px);
 }
 
 .hide2 {
   transition: 0.5s;
   opacity: 0;
+  filter: blur(15px);
 }
 
 .hide3 {
   transition: 0.5s;
   opacity: 0;
+  filter: blur(15px);
+}
+
+.hide4 {
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(15px);
 }
 
 .show1 {
   transition: 0.5s;
+  filter: blur(0px);
 }
 
 .show2 {
   transition: 0.5s;
+  filter: blur(0px);
 }
 .show3 {
   transition: 0.5s;
+  filter: blur(0px);
+}
+
+.show4 {
+  transition: 0.5s;
+  filter: blur(0px);
 }

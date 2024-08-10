@@ -8,15 +8,16 @@ import AboutMe from "./components/sites/aboutMe";
 function App() {
   return (
     <>
-      <div>
-        <AboutMe></AboutMe>
-      </div>
+      <div></div>
 
       <Routes>
+        <Route path="/" element={<AboutMe />} />
         <Route path="/webDevelopment" element={<WebDevelopment />} />
         <Route path="/robloxStudio" element={<RobloxStudio />} />
         <Route path="/3Dmodelling" element={<ThreeDmodelling />} />
       </Routes>
+
+      
     </>
   );
 }

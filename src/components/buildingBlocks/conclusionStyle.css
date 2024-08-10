@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Dosis;
+  src: url(../fonts/Dosis-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DosisMedium;
+  src: url(../fonts/Dosis-Medium.ttf);
+  font-weight: bold;
+}
+
+.conclusion {
+  margin-top: -50px;
+  text-align: center;
+  font-family: dosisMedium;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.conclusionText {
+  margin-top: -50px;
+  font-family: dosis;
+  font-size: 40px;
+  color: #ffffff;
+  max-width: 45%;
+}
+
+.infoHolder {
+  width: 500px;
+  height: 150px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(46, 46, 46);
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infoHolder > img {
+  height: 80%;
+  border-radius: 50px;
+}
+
+.infoHolder > a {
+  color: white;
+  margin-top: 20px;
+}
